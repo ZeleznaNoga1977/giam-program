@@ -109,7 +109,7 @@
 &lt;head&gt;
 &lt;meta charset=&quot;UTF-8&quot;&gt;
 &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-&lt;title&gt;Vpliv UI in človeškega odločanja na pripravo EU projektnih prijav&lt;/title&gt;
+&lt;title&gt;Vloga UI in strokovne presoje pri pripravi EU projektnih prijav&lt;/title&gt;
 &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js&quot;&gt;&lt;/script&gt;
 &lt;style&gt;
   :root {
@@ -172,8 +172,8 @@
 &lt;/head&gt;
 &lt;body&gt;
 &lt;div class=&quot;wrap&quot;&gt;
-  &lt;h1&gt;Vpliv UI in človeškega odločanja na pripravo EU projektnih prijav&lt;/h1&gt;
-  &lt;p class=&quot;lead&quot;&gt;Interaktivni model ekipe za pripravo prijav, ki ima za celotne EU prijave na voljo 3.440 delovnih ur (dve osebi-leti).&lt;/p&gt;
+  &lt;h1&gt;Vloga UI in strokovne presoje pri pripravi EU projektnih prijav&lt;/h1&gt;
+  &lt;p class=&quot;lead&quot;&gt;Interaktivni model ekipe za pripravo EU prijav z razpoložljivo kapaciteto 3.440 delovnih ur (2 polno zaposlena).&lt;/p&gt;
 
   &lt;div class=&quot;top&quot;&gt;
     &lt;div class=&quot;panel&quot;&gt;
@@ -188,7 +188,7 @@
       &lt;div class=&quot;hint&quot; id=&quot;ai-hint&quot;&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;panel&quot;&gt;
-      &lt;div class=&quot;control-head&quot;&gt;&lt;label&gt;Človeške odločitvene točke&lt;/label&gt;&lt;/div&gt;
+      &lt;div class=&quot;control-head&quot;&gt;&lt;label&gt;Pogostost strokovnega odločanja&lt;/label&gt;&lt;/div&gt;
       &lt;div class=&quot;seg orange&quot; id=&quot;pts-seg&quot;&gt;
         &lt;button onclick=&quot;setPoints(0)&quot;&gt;Brez&lt;/button&gt;&lt;button onclick=&quot;setPoints(1)&quot;&gt;1&lt;/button&gt;&lt;button onclick=&quot;setPoints(2)&quot;&gt;2&lt;/button&gt;&lt;button onclick=&quot;setPoints(3)&quot;&gt;3&lt;/button&gt;
       &lt;/div&gt;
@@ -483,7 +483,7 @@ function drawStage() {
 
   label((X.poolL + X.poolR) / 2, [&#x27;Projektne ideje&#x27;, `${params.ideas} idej`], COL.ink);
   if (P === 0) {
-    label((X.decL + X.decR) / 2, [&#x27;Brez odločitvenih točk&#x27;, &#x27;vse ideje gredo naravnost v pisanje&#x27;], COL.mute);
+    label((X.decL + X.decR) / 2, [&#x27;Brez odločanja&#x27;, &#x27;vse ideje gredo naravnost v pisanje&#x27;], COL.mute);
   } else {
     for (let k = 0; k &lt; P; k++) {
       const gx = gateX(k, P);
